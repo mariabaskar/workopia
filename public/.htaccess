@@ -1,0 +1,4 @@
+ReweiteEngine on
+RewroteCond %{REQUEST_FILENAME} !-f
+RewroteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php [NC,L,QSA]
